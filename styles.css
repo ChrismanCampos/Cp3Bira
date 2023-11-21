@@ -4,8 +4,8 @@
 }
 
 .cabecalho {
-    background-image: url(/imagens/bg-header.jpg);
-    min-height: 100vh; 
+    background-image: url(imagens/bg-header.jpg);
+    min-height: 100%; 
     background-size: cover;
     background-position: center center;
     background-repeat: no-repeat;
@@ -29,6 +29,12 @@
 .menu-opcoes {
     display: flex;
     list-style: none;
+    gap: 20px;
+
+}
+
+.botaosaiba {
+    margin-top: 5%;
 }
 
 .titulo-principal {
@@ -44,12 +50,13 @@
 
 .titulo-principal h1 {
     font-family: 'Open Sans', sans-serif;
-    font-size: 450%;
+    font-size: 250%;
 }
 
 .menu {
     color: rgb(255, 255, 255);
     width: 350px;
+    gap: 20px;
 }
 
 .saibamais {
@@ -60,6 +67,7 @@
     padding: 15px;
     width: 15%;
     font-size: 20px;
+    margin-top: 20px;
 }
 
 section {
