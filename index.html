@@ -66,7 +66,10 @@
     </ul>
 
     <p class="contato-ajuda">Seu ramo de atuação não está por aqui? Entre em contato, certamente podemos te ajudar</p>
-    <a href="#" target="_blank" class="botao-entrar-contato">Entrar em Contato</a>
+    <div class="botaocontato">
+        <a href="#" target="_blank" class="botao-entrar-contato">Entrar em Contato</a>
+
+    </div>
 </section>
 
 <section class="fundo">
@@ -114,12 +117,19 @@
     <h1 class="titulo-melhor-escolha">Porque a StartUp Me é a melhor escolha para seu app</h1>
     <p>Os Apps na Startup Me seguem os padrões atuais para desenvolvimento web mobile, juntamente com metodologias ágeis. Todos os projetos incluem análise de viabilidade de mercado, concepção de User Interface e User Experience, criação gráfica e plano de marketing, sempre buscando o maior nível de engajamento dos clientes. Aliando o melhor custo/prazo/benefício</p>
 
-    <h2 class="titulo-native">Extraímos o máximo dos aparelhos utilizando os recursos nativos</h2>
-    <p>Nossos Apps se integram com as funcionalidades e recursos nativos do seu aparelho como: Câmera, GPS, galeria de fotos, áudio e vídeo, calendários, lista de contatos, potencializamos o uso do acelerômetro, do giroscópio e muito mais!</p>
-
-    <div class="native-container">
-        <img src="./imagens/native-resources.png" alt="Recursos-Nativos" class="imagem-mapa">
+    <div class="caixa">
+        <div class="caixa-1">
+            <h2 class="titulo-native">Extraímos o máximo dos aparelhos utilizando os recursos nativos</h2>
+            <p>Nossos Apps se integram com as funcionalidades e recursos nativos do seu aparelho como: Câmera, GPS, galeria de fotos, áudio e vídeo, calendários, lista de contatos, potencializamos o uso do acelerômetro, do giroscópio e muito mais!</p>
+        </div>
+        <div class="native-container">
+            <img src="./imagens/native-resources.png" alt="Recursos-Nativos" class="imagem-mapa">
+        </div>  
     </div>
+    
+    
+
+    
 </section>
 
 <section class="telefones">
@@ -138,50 +148,56 @@
 </section>
 
 <section class="contato">
-    <p>Campos com * são obrigatórios.</p>
-    <form action="#" method="post" class="formulario">
-        <!-- Campo Nome -->
-        <label for="nome">Nome *</label>
-        <input type="text" id="nome" name="nome" required>
+    <div class="form-1">
+        <p>Campos com * são obrigatórios.</p>
+        <form action="#" method="post" class="formulario">
+            <!-- Campo Nome -->
+            <label for="nome">Nome *</label>
+            <input type="text" id="nome" name="nome" required>
+    
+            <!-- Campo Email -->
+            <label for="email">Email *</label>
+            <input type="email" id="email" name="email" required>
+    
+            <!-- Campo Telefone -->
+            <label for="telefone">Telefone</label>
+            <input type="tel" id="telefone" name="telefone">
+            
+            <label for="desejo">O que você deseja?</label>
+            <select id="desejo" name="desejo">
+                <option value="orcamento">Orçamento</option>
+                <option value="informacao">Obter informações</option>
+                <option value="suporte">Suporte técnico</option>
+                <option value="parceria">Parceria comercial</option>
+                <option value="outro">Outro</option>
+            </select>
+    
+            <label for="mensagem">Mensagem</label>
+            <textarea id="mensagem" name="mensagem" rows="4" placeholder="Digite sua mensagem" required></textarea>
+    
+            <p id="mensagem-validada" class="mensagem-validada"></p>
+    
+            <button type="submit" onclick="validarFormulario()">Enviar</button>
+        </form>
+    </div>
+    
 
-        <!-- Campo Email -->
-        <label for="email">Email *</label>
-        <input type="email" id="email" name="email" required>
-
-        <!-- Campo Telefone -->
-        <label for="telefone">Telefone</label>
-        <input type="tel" id="telefone" name="telefone">
-        
-        <label for="desejo">O que você deseja?</label>
-        <select id="desejo" name="desejo">
-            <option value="orcamento">Orçamento</option>
-            <option value="informacao">Obter informações</option>
-            <option value="suporte">Suporte técnico</option>
-            <option value="parceria">Parceria comercial</option>
-            <option value="outro">Outro</option>
-        </select>
-
-        <label for="mensagem">Mensagem</label>
-        <textarea id="mensagem" name="mensagem" rows="4" placeholder="Digite sua mensagem" required></textarea>
-
-        <p id="mensagem-validada" class="mensagem-validada"></p>
-
-        <button type="submit" onclick="validarFormulario()">Enviar</button>
-    </form>
-
-    <img src="./imagens/mapa-masp.png" alt="mapa-trianon-masp">
-    <p>StartUp-Me Desenvolvimento de Software</p>
-    <p>Av Paulista, 1374 - Bela Vista, São Paulo - SP Conj 01 Sala 107 - CEP 01311-300</p>
-
-    <p>
-        <strong>E-mail:</strong>
-        contato@startup-me.com.br
-    </p>
-
-    <p>
-        <strong>Telefone:</strong>
-        11 4178 7256
-    </p>
+    <div class="form-2">
+        <img src="./imagens/mapa-masp.png" alt="mapa-trianon-masp">
+        <p>StartUp-Me Desenvolvimento de Software</p>
+        <p>Av Paulista, 1374 - Bela Vista, São Paulo - SP Conj 01 Sala 107 - CEP 01311-300</p>
+    
+        <p>
+            <strong>E-mail:</strong>
+            contato@startup-me.com.br
+        </p>
+    
+        <p>
+            <strong>Telefone:</strong>
+            11 4178 7256
+        </p>
+    </div>
+    
 </section>
 
 <footer class="rodape bg-footer">

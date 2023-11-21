@@ -37,6 +37,10 @@
     margin-top: 5%;
 }
 
+.botaocontato {
+    margin-top: 5%;
+}
+
 .titulo-principal {
     color: rgb(255, 255, 255);
     text-align: center;
@@ -172,6 +176,18 @@ section {
     margin-left: 60px;
 }
 
+.caixa {
+    margin-top: 7%;
+display: flex;
+align-items: center;
+justify-content: center;
+padding-bottom: 7%;
+}
+
+.caixa-1 {
+ width: 30%;
+}
+
 .native-container {
     display: flex;
     justify-content: center;
@@ -216,6 +232,19 @@ section {
     margin-top: 15px;
     margin-bottom: 30px;
     color: rgb(119, 119, 119);
+}
+
+.contato {
+    display: flex;
+    background-image: url(imagens/bg-footer.jpg);
+}
+
+.form-1 {
+    width: 50%;
+}
+
+.form-2 {
+    color: white;
 }
 
 .formulario {
